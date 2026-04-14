@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #090909;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glow-button {
+  transition: all 0.35s ease;
+  box-shadow: 0 0 0 rgba(255, 107, 0, 0);
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 32px rgba(255, 107, 0, 0.45);
+}
+
+.input-field {
+  border-radius: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+  color: #f4f4f5;
+  padding: 0.8rem 0.95rem;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: rgba(255, 107, 0, 0.9);
+  box-shadow: 0 0 0 4px rgba(255, 107, 0, 0.15);
+}
